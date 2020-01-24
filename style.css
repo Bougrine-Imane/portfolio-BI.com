@@ -1,0 +1,489 @@
+
+body{
+	background-image:linear-gradient(rgba(245, 246, 252, 0.52), rgba(0,0,0,0.6)),url('bg5.jpg');
+	background-size: cover;
+	margin: 0px;
+	background-size: 100% 100%;
+	padding: 0px;
+	font-family: serif;
+}
+.container{
+	position: relative;
+	width: 100%;
+
+}
+.main-menu-container{
+	position: relative;
+	width: 12.5%;
+	float: left;
+	display: block;
+	line-height: 26px;
+}
+
+.lnr{
+	font-family: Linearicons-Free;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+   
+}
+
+.main-menu ul {
+	display: block;
+    padding: 20px;
+}
+.main-menu li,aside li {
+    list-style: none;
+}
+
+.main-menu ul li a, aside ul li a{
+	text-decoration: none;
+	display: block;
+    margin: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+.main-menu ul li a.active {
+    color: orange;
+}
+.main-menu ul li a:hover{
+    color: orange;
+}
+.main-menu ul li a i{
+	display: block;
+    margin: 5px auto;
+    font-size: 30px;
+}
+.home-part{
+	display: block;
+    position: relative;
+    float: left;
+    width: 80%;
+    opacity: 1.0;
+    transition: all 0.8s;
+    
+}
+.home-part-container.home{
+	position: fixed;
+	width: 50%;
+	margin-bottom: 0px;
+	margin-left: 80px;
+	margin: 140px 10%;
+}
+.home-part-container{
+	position: fixed;
+	width: 75%;
+	margin-bottom: 0px;
+	margin-top: 50px;
+}
+.home-part-container.slides{
+	visibility: hidden;
+}
+.home-part-container.slides.active{
+	visibility: visible;
+}
+.home-part-container.home .part1{
+	color: white;
+	margin-bottom: 40px;
+}
+.home-part-container.home .part1 P{
+	margin-bottom: 0px;
+	font-size: xx-large;
+	font-weight: 900;
+}
+.home-part-container.home .part2{
+	color: white;
+}
+aside{
+	position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    transition: all 0.3s;
+}
+aside .date{
+	margin: 20px;
+    padding: 10px;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    border-radius: 2px;
+}
+#day{
+	display: block;
+	font-size: 60px;
+	
+}
+#month{
+	display: block;
+	font-size: 37px;
+
+}
+#year{
+	display: block;
+	font-size: 30px;
+  }
+
+aside .time{
+	margin: 20px;
+    padding: 10px;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    border-radius: 2px;
+}
+#h{
+	font-size: 20px;
+	font-weight: 900;
+}
+
+aside .social-media{
+	text-align: center;
+	padding: 0px;
+	margin: 20px 0px; 
+}
+
+aside .social-media ul li a{
+	font-size: 40px;
+	outline: none;	
+	
+}
+aside .social-media ul li a:hover{
+	color: orange;
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.head{
+	color: white;
+	background-color: black;
+	height: 40px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.head a{
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	float: right;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+/*.knowme-content .photo img{
+	padding: 0px 50px; 
+	width: 50%;
+	text-align:center;
+}
+
+.knowme-content .info{
+	width: 40%;
+	padding: 0px 50px;
+	line-height: 30px;
+}
+.knowme-content .info table th{
+	color: #474242;
+}
+.knowme-content .info table td{
+	color: #474242;
+}
+
+.knowme-content{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.quote{
+	background-color: #dbd6d6;
+	padding: 50px;
+	border-left: 10px orange solid;
+	width: 30%;
+}
+
+*/
+.knowme-content p{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.knowme-content .info table th{
+	color: rgb(38, 34, 34);
+}
+.knowme-content .info table td{
+	color: #212121;
+}
+.knowme-content{
+	display: flex;
+	flex-wrap: wrap;
+	color: #212121;
+}
+.knowme-content .info{
+	width: 50%;
+	margin-top: 20px;
+}
+.knowme-content .photo{ 
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+	width: 48%;
+}
+.knowme-content .photo img{ 
+	display: inline-block;
+	width: 100%;
+}
+.download-cv a{
+	margin-top: 30px;
+	padding: 10px;
+	border: 2px solid white;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	float: right;
+}
+.download-cv a:hover{
+	border: 2px solid rgb(239, 227, 227);
+	color: rgb(239, 227, 227);
+
+}
+.content{
+	overflow : auto;
+
+}
+.content{
+	position: relative;
+	height: 440px;
+	background-color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 40px;
+	padding-bottom: 0px;
+}
+.knowme-content hr ,.resume-content hr,.skills-content hr,.projects-content hr,.contact-content hr,.blog-content hr{
+	width: 65%;
+	height: 2px;
+	background: orange;
+	border:1px orange solid;
+	position: absolute;
+	top:11%;
+	left: 30%;
+}
+.knowme-content > span, .resume-content > span, .skills-content > span,.projects-content > span,.contact-content > span,.blog-content > span{
+	font-size: 40px;
+	font-weight: bold;
+	display: inline-block;
+}
+.quote{
+	background-color: rgba(219, 217, 217,0.2);
+	padding: 20px;
+	border-left: 10px orange solid;
+	width: 30%;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	line-height: 30px;
+	color: gray;
+}
+
+.quote span{
+	font-size: 25px;
+	padding-bottom: 20px;
+	color: black;
+}
+
+.resume-content p.title ,.skills-content p.title, .projects-content p.title,.contact-content p.title{
+   font-weight: bold;
+   border-bottom: 1px solid rgb(36,36,36,0.2); 
+   font-size: 25px;  
+   color: rgb(36,36,36);
+   margin: 50px auto;  
+}
+.resume-content  li span{
+   
+   border-bottom: 1px solid orange;  
+   color: rgb(36,36,36,0.4); 
+}
+.resume-content ul{
+   position: relative;
+	list-style: none;
+	padding-top: 0px;    
+}
+
+.resume-content ul li {
+  position: relative;
+  padding: 0px 10px;
+}
+
+.resume-content ul li:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  /*background: #D8D8D8;*/
+  background: orange;
+  position: absolute;
+  left: -15px;
+  top: 10%;
+  transform: translateY(-40%);
+}
+
+.resume-content ul li:after {
+  content: '';
+  width: 2px;
+  height: 110%;
+  background: #D8D8D8;
+  position: absolute;
+  left: -8px;
+  top: 20%;
+}
+	
+.project,.contacts,.blog-inside{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+
+.project .part1,.project .part2{
+	width: 48%;
+	margin-bottom: 30px;
+	
+}
+.project .part1 img,.project .part2 img{
+	width: 100%;
+	height: 220px;
+	border-radius: 2px;
+}
+
+
+.project .project-content{
+	padding: 15px;
+	color: #424242;
+	background-color: #F8F8F8;
+	
+}
+.contacts{
+	padding: 20px;
+}
+.contacts a i{
+	font-size: 35px;
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+}
+.contacts a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+
+}
+.contacts a:hover{
+	color: orange;
+}
+
+.blog-inside{
+	width: 50%;
+
+}
+
+.blog-inside img{
+	width: 100%;
+	height: 220px;
+	border-radius: 5px;
+}
+.blog-inside-content{
+	background-color: #f8f8f8;
+	padding: 10px;
+}
+.blog-inside-content i{
+	display: block;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+}
+.blog-inside-content i a{
+	text-decoration: none;
+	color: #4f4f4f;
+	
+}
+.blog-inside-content i a:hover{
+	color: orange;
+}
+form{
+	padding: 20px;
+}
+form i{
+	padding: 10px;
+	font-size: 20px;
+}
+form input{
+	padding: 10px;
+	width: 90%;
+	border: none;
+	background-color: #f8f8f8;
+	margin-bottom: 20px;
+	height: 20px;
+	outline: none;
+}
+input[type="submit"]{
+	width: 15%;
+	color: white;
+	background-color: orange;
+	height: 40px;
+	float : right;
+	border-radius: 5px;
+	margin-right: 10%;
+	outline: none;
+	font-weight: bold;
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+}
+.contacts p{
+	border-bottom: 1px solid #efefef;
+}
