@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>BOUGRINE Imane</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel='stylesheet' href='typicons.font-master/src/font/typicons.min.css' />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel='stylesheet' href='res/typicons.font-master/src/font/typicons.min.css' />
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<script type="text/javascript" src=""></script>
 	<meta charset="utf-8">
 </head>
 <body >
@@ -160,7 +161,7 @@
 							</table>	
 						</div>
 						<div class="photo">
-							<img src="cv.jpg">
+							<img src="img/cv.jpg">
 						</div>
 						<div class="quote">
 							<span><strong>FAVORITE QUOTE</strong></span><br>
@@ -284,14 +285,14 @@
 						<p></p>
 						<div class="project">
 							<div class="part1">
-								<img src="mariogame.jpg">
+								<img src="img/mariogame.jpg">
 								<div class="project-content">
 									<strong ><font size="5px">Developpement of the famous game "MARIO"</font></strong><br>
 									we used in this project java programming language and swing library
 								</div>
 							</div>
 							<div class="part2">
-								<img src="bg.jpg">
+								<img src="img/bg.jpg">
 								<div class="project-content">
 									<strong ><font size="5px">E-commerce website called "ENAMI"</font></strong><br>
 									this website is developped using html, css , php and mvc design pattern
@@ -300,14 +301,14 @@
 						</div>
 						<div class="project">
 							<div class="part1">
-								<img src="mariogame.jpg">
+								<img src="img/mariogame.jpg">
 								<div class="project-content">
 									<strong ><font size="5px">Surgical unit management web application </font></strong><br>
 									this application is developped using html, css , php javascript and mvc design pattern
 								</div>
 							</div>
 							<div class="part2">
-								<img src="bg5.jpg">
+								<img src="img/bg5.jpg">
 								<div class="project-content">
 									<strong ><font size="5px">Resume website </font></strong><br>
 									developped using html, css and jquerry
@@ -344,13 +345,13 @@
 								</a>
 							</div>
 							<div class="part3">
-								<a href="">
+								<a href="https://web.facebook.com/profile.php?id=100007354622962">
 									<i class="typcn typcn-social-facebook-circular"></i>
 									Facebook
 								</a>
 							</div>
 							<div class="part4">
-								<a href="">
+								<a href="https://www.linkedin.com/in/imane-bougrine-291981189/">
 									<i class="typcn typcn-social-linkedin-circular"></i>
 									LinkedIn
 								</a>
@@ -379,7 +380,7 @@
 								<i class="typcn typcn-message"></i><input type="text" name="comment" placeholder="your message">
 							</div>
 							<div class="inputs">
-								<input type="submit" name="submit" value="Get In Touch" onclick="onclick="javascript:sendMail(getContenu());">
+								<input type="submit" name="submit" value="Get In Touch" onclick="javascript:sendMail(getContenu());">
 							</div>
 						</form>
 					</div>
@@ -398,7 +399,7 @@
 						<hr >
 						<p></p>
 						<div class="blog-inside">
-								<img src="raspppp.png" alt="raspberry blog in medium">
+								<img src="img/raspppp.png" alt="raspberry blog in medium">
 								<div class="blog-inside-content">
 									<strong ><font size="5px">Getting started with raspberry pi + Two best ways to connect to it from your computer.</font></strong><br>
 									Before getting started in this article, let’s take a few minute to figure out some basic notion about raspberry pi .<br>
@@ -444,48 +445,6 @@
 		</aside>
 	</div>
 	<script src="jquery-3.4.1.min.js"></script>
-	<script type="text/javascript">
-		array = new Array("JAN","FEB","MARCH","APR","JUN","JUIL","AUG","SEP","OCT","NOV","DEC");
-		d= new Date();
-		document.getElementById("year").innerHTML=d.getFullYear();
-		document.getElementById("month").innerHTML=array[d.getMonth()];
-		document.getElementById("day").innerHTML=d.getDate();
-		t=d.getTime();
-		document.getElementById("h").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
-		// traitement "active"
-		$(".main-menu ul li a").on("click",function () {
-			$(".main-menu ul li a").removeClass("active");
-			$(this).addClass("active");
-			$(".home-part-container").removeClass("active");
-			$(".home-part-container.slides."+$(this).attr("data-title")).addClass("active");
-			history.pushState('data', '', $(this).attr("data-url"));
-		});
-		//
-		$(".home-part-container .head a").on("click",function() {
-			$(".home-part-container.slides."+$(this).attr("data-title")).removeClass("active");
-			$(".main-menu ul li a").removeClass("active");
-			$(".main-menu ul li #home").addClass("active");
-			history.pushState('data', '', 'bougrine.html');
-		});
-
-		if(window.location.hash){
-			var temp=$(".main-menu ul li a[data-url='bougrine.html" +document.location.hash+ "']");
-			var temp2=temp.attr("data-title");
-			//alert(".main-menu ul li a[data-url='bougrine.html#" +document.location.hash+ "']");
-			$(".home-part-container.slides."+temp2).addClass("active");
-			//remove active from main menu
-			$(".main-menu ul li a").removeClass("active");
-			//alert(".main-menu ul li a[data-title='"+temp2+"']");
-			$(".main-menu ul li a[data-title='"+temp2+"']").addClass("active");
-		}
-		//variables
-		var fullname;
-		var email;
-		var message;
-		function getContenu() {
-			fullname=document.getElementById("fullname");
-			email=document.getElementById("email");
-		}
-	</script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
