@@ -6,6 +6,35 @@ body{
 	background-size: 100% 100%;
 	padding: 0px;
 	font-family: serif;
+	width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .date,.time{
+    display: none;
+  }
+  aside{
+  	width: 15%;
+  	text-align: center;
+  }
+  aside ul{
+  	padding: 0px;
+  }
+  .knowme-content hr ,.resume-content hr,.skills-content hr,.projects-content hr,.contact-content hr,.blog-content hr{
+  	display: none;
+  }
+  .knowme-content span ,.resume-content span,.skills-content span,.projects-content span,.contact-content span,.blog-content span{
+  	border-bottom: orange 5px solid;
+  }
+  .photo img{
+  	display: none;
+  	visibility: hidden;
+  }
+  .quote span{
+  	border: none;
+  }
+  .home-part-container{
+ 	width: 90%;
+  }
 }
 .container{
 	position: relative;
@@ -248,7 +277,10 @@ aside .social-media ul li a:hover{
 .knowme-content p{
 	margin-top: 40px;
 	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
 }
+
 .knowme-content .info table th{
 	color: rgb(38, 34, 34);
 }
@@ -320,7 +352,7 @@ aside .social-media ul li a:hover{
 	background-color: rgba(219, 217, 217,0.2);
 	padding: 20px;
 	border-left: 10px orange solid;
-	width: 30%;
+	width: 50%;
 	margin-top: 30px;
 	margin-bottom: 40px;
 	line-height: 30px;
